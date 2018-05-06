@@ -336,12 +336,21 @@ ul.no-margin{
 }
 
 .details ul{
-  margin-top:0.3in;
+  /*margin-top:0.3in;*/
   margin-bottom:0;
 }
 
 .details ul li{
   line-height: 1.5;
+}
+
+.span-sig-work-title{
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.span-sig-work-content{
+    font-style: italic;
 }
 
 footer{
