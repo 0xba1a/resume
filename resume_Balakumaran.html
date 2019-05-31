@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="style_sivashanmugam.css" />
+    <link rel="stylesheet" type="text/css" href="style_sivashanmugam_purple.css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
@@ -17,7 +17,7 @@
         <header id="title">
             <h1>Balakumaran Kannan</h1>
             <span class="subtitle">System Programmer</span>
-            <p class="aboutme">Linux system programmer having 7 years of experience with Bachelor of Engineering degree specialized in computer science and engineering. Open source contributer, hobby blogger and proud fan of Vim</p>
+            <p class="aboutme">Linux system programmer having 8 years of experience with a Bachelor of Engineering degree specialized in computer science and engineering. Open source contributer, hobby blogger and proud fan of Vim</p>
         </header>
 
 
@@ -51,8 +51,8 @@
                         </header>
                         <div>
                             <ul>
-                                <li>Owner of Service OS kernel for ARM based switches</li>
-                                <li>Owner of High-Availability and Redundant File System modules</li>
+                                <li>Owner of Service OS for ARM based switches</li>
+                                <li>Board bring-up, U-boot and Linux port to ARM platforms</li>
                             </ul>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                         <header>
                             <h3>Tata Elxsi</h3>
                             <span class="place"><i class="fa fa-briefcase"></i> &nbsp;Software Engineer</span>
-                            <span class="location">Chennai</span>
+                            <span class="location">Coimbatore</span>
                         </header>
                         <div>
                             <ul>
@@ -172,7 +172,7 @@
             <h4><i class="fa fa-wrench"></i> Skills</h4>
             <button>C</button>
             <button>Linux</button>
-            <button>Platform</button>
+            <button>Assembly</button>
             <button>Yocto</button>
         </div>
 
@@ -245,23 +245,22 @@
 
                 <section class="blocks">
                     <div class="date">
-                        <span>Now</span><span>2018<br>Jan&nbsp;</span>
+                        <span>Now</span><span>2017<br>May&nbsp;</span>
                     </div>
                     <div class="decorator"></div>
                     <div class="details">
                         <header>
-                            <h3>ARM board bring-up</h3>
+                            <h3>Linux OS development for ARM & ARM64</h3>
                             <span class="place"><i class="fa fa-briefcase"></i> &nbsp;Hewlett Packard Enterprise </span>
                             <span class="location">Bangalore</span>
                         </header>
                         <div>
                             <ul>
-                                <li>Brought-up two boards one is based on ARM64 NXP SoC. Another is internal developed ARM32 SoC</li>
-                                <li>Compiled complete Linux OS using Yocto</li>
+                                <li>Brought-up two boards. One is an ARM64 based SoC provided by NXP, another is an in-house developed ARM32 SoC</li>
+                                <li>Prepared our own Linux distribution using Yocto</li>
                                 <li>Worked on kernel config and userland package selection</li>
-                                <li>Modified the device-tree for board requirements</li>
-                                <li>Fixed multiple compile-time and bring-up time issues</li>
-                                <li>Also worked some part of u-boot and First Stage Loader for the ARM32 board</li>
+                                <li>Managed device-tree changes for the board</li>
+                                <li>Fixed multiple compile-time and bring-up issues</li>
                             </ul>
                         </div>
                     </div>
@@ -269,25 +268,57 @@
 
                 <section class="blocks">
                     <div class="date">
-                        <span>2018<br>Dec&nbsp;</span><span>2017<br>May&nbsp;</span>
+                        <span>Now</span><span>2018<br>Sep&nbsp;</span>
                     </div>
                     <div class="decorator"></div>
                     <div class="details">
                         <header>
-                            <h3>Core-dump capture design</h3>
-                            <span class="place"><i class="fa fa-briefcase"></i> &nbsp;Hewlett Packard Enterprise</span>
+                            <h3>Bootloader development for ARM32</h3>
+                            <span class="place"><i class="fa fa-briefcase"></i> &nbsp;Hewlett Packard Enterprise </span>
                             <span class="location">Bangalore</span>
                         </header>
                         <div>
                             <ul>
-                                <li>As a part of core-team that developed new generation Linux based access switches, I was initially responsible for core-dump capture mechanism</li>
-                                <li>Developed a method to capture core-dump on a NFS drive</li>
-                                <li>Worked with kexec system call to capture kernel core-dump</li>
-                                <li>Used Yocto framework to add necessary kernel config options and packages</li>
+                                <li>Developed First Stage Loader (FSL) for the in-house build ARM32 platform</li>
+                                <li>U-boot is configured, built and kept as an integral part of FSL</li>
+                                <li>After console and DRAM initilization, control will be given to u-boot</li>
+                                <li>Worked closely with hardware team for DRAM inialization sequence and BIST enablement</li>
                             </ul>
                         </div>
                     </div>
                 </section>
+
+                <section class="blocks">
+                    <div class="date">
+                        <span>Now</span><span>2017<br>May&nbsp;</span>
+                    </div>
+                    <div class="decorator"></div>
+                    <div class="details">
+                        <header>
+                            <h3>Other significant activities</h3>
+                            <span class="place"><i class="fa fa-briefcase"></i> &nbsp;Hewlett Packard Enterprise </span>
+                            <span class="location">Bangalore</span>
+                        </header>
+                        <div>
+                            <ul>
+                                <li>Updated syscon-reboot driver to set DDR in self-refresh mode before reboot. It required a procfs file cretion, an ideal mapping section in kernel and careful alignment of reset code.</li>
+                                <li>Enabled D-cache in kexec purgatory code, which reduced boot time</li>
+                                <li>Debugged multiple early-boot issues with early_printk and JTAG</li>
+                                <li>Spent significant amount of time with ARM,ARM64 Assembly code</li>
+                                <li>Designed a core-dump capture system to capture kernel-core dump via NFS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </div>
+    </section>
+
+    <section class="main" style="position: relative; height:7in">
+        <div class="container">
+            <h4><i class="fa"></i></h4>
+            <section class="project">
 
                 <section class="blocks">
                     <div class="date">
@@ -310,14 +341,6 @@
                         </div>
                     </div>
                 </section>
-            </section>
-        </div>
-    </section>
-
-    <section class="main" style="position: relative; height:7in">
-        <div class="container">
-            <h4><i class="fa"></i></h4>
-            <section class="project">
 
                 <section class="blocks">
                     <div class="date">
@@ -326,36 +349,16 @@
                     <div class="decorator"></div>
                     <div class="details">
                         <header>
-                            <h3>Preperation of open source tools</h3>
+                            <h3>Preperation of SONY Linux</h3>
                             <span class="place"><i class="fa fa-briefcase"></i> &nbsp;SONY</span>
                             <span class="location">Bangalore</span>
                         </header>
                         <div>
                             <ul class="no-margin">
-                                <li>Part of a team that developed a Linux distribution to be used in SONY devices</li>
-                                <li>Ported open source network packages like Curl, OpenSSL, Squid, Connmon, IPSEC tools to ARM platform</li>
-                                <li>Replaced all deprecated system calls from OpenSSL and added IPv6 support to it</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="blocks">
-                    <div class="date">
-                        <span>2014<br>Aug&nbsp;</span><span>2013<br>May&nbsp;</span>
-                    </div>
-                    <div class="decorator"></div>
-                    <div class="details">
-                        <header>
-                            <h3>IPv6 compliance verification</h3>
-                            <span class="place"><i class="fa fa-briefcase"></i> &nbsp;SONY</span>
-                            <span class="location">Bangalore</span>
-                        </header>
-                        <div>
-                            <ul class="no-margin">
+                                <li>Part of a team that developed a Linux distribution for SONY devices</li>
+                                <li>Ported open source network packages like Curl, OpenSSL, Squid, IPSEC tools</li>
                                 <li>Performed IPv6 Ready Logo tests with TAHI test framework</li>
-                                <li>Basic IPv6, DHCPv6, IPsec tests were performed</li>
-                                <li>Identified bugs with Linux IPv6 kernel stack and a driver. Contributed fixes kernel community</li>
+                                <li>Identified bugs with Linux kernel. Contributed fixes kernel community</li>
                             </ul>
                         </div>
                     </div>
@@ -363,7 +366,7 @@
 
                 <section class="blocks">
                     <div class="date">
-                        <span>2012<br>May&nbsp;</span><span>2013<br>Mar&nbsp;</span>
+                        <span>2013<br>Mar&nbsp;</span><span>2012<br>May&nbsp;</span>
                     </div>
                     <div class="decorator"></div>
                     <div class="details">
@@ -374,10 +377,9 @@
                         </header>
                         <div>
                             <ul class="no-margin">
-                                <li>Developed a full-fledged network library in Linux that supports both wired and wireless</li>
-                                <li>This library was developed to be used in SONY TVs and Blueray DVD players and are still in use</li>
-                                <li>Developed with both IPv4 and IPv6 support</li>
-                                <li>Participated in all phases of development cycle - investigation, design, development, test and maintanence</li>
+                                <li>Developed a network library with wired and wireless support</li>
+                                <li>It was used in SONY TVs and Blueray DVD players and are still in use</li>
+                                <li>Participated in all phases of development cycle</li>
                             </ul>
                         </div>
                     </div>
