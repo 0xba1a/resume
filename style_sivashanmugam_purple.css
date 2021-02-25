@@ -322,6 +322,9 @@ ul.no-margin {
     float: left;
 }
 
+.details .grade {
+    color: #a9389b;
+}
 .details .location {
     color: #a9389b;
     float: right;

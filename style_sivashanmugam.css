@@ -318,6 +318,11 @@ ul.no-margin{
   float: right;
 }
 
+.details .grade{
+  color: #538cc6;
+  float: left;
+}
+
 .details div{
   clear: both;
 }
