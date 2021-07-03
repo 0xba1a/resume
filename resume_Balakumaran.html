@@ -193,9 +193,66 @@
                         <button>C</button>
                         <button>Linux</button>
                         <button>Python</button>
-                        <button>Ansible</button>
                         <button>Shell</button>
+                        <button>Assembly</button>
                     </div>
+
+                    <div class="container">
+                        <h4><i class="fa fa-thumbs-up"></i> Work Highlights</h4>
+                        <section class="project">
+                            <section class="blocks">
+                                <div class="date">
+                                </div>
+                                <div class="decorator"></div>
+                                <div class="details">
+                                    <header>
+                                        <h3>Flipkart</h3>
+                                    </header>
+                                    <div>
+                                        <ul>
+                                            <li>Performance impact analysis of L3-cache on VMs - perf, Linux schedule domain, qemu, IPI - Inter Processor Interrupt, VM_EXIT</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="blocks">
+                                <div class="date">
+                                </div>
+                                <div class="decorator"></div>
+                                <div class="details">
+                                    <header>
+                                        <h3>HPE</h3>
+                                    </header>
+                                    <div>
+                                        <ul>
+                                            <li>Syscon-reboot driver update in ARM64 to enable DDR self-refresh before reboot. Kernel idmap, Cache-line alignment. Done for enabling secure-boot</li>
+                                            <li>Enabled D-cache in kexec-purgatory to reduce boot time significantly</li>
+                                            <li>Kernel core-dump capture to remote server</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="blocks">
+                                <div class="date">
+                                </div>
+                                <div class="decorator"></div>
+                                <div class="details">
+                                    <header>
+                                        <h3>Sony</h3>
+                                    </header>
+                                    <div>
+                                        <ul>
+                                            <li>Open source contribution to Linux kernel - Fixed bugs in loopback interface and phy driver</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </section>
+                    </div>
+
 
                     <div class="container">
                         <h4><i class="fa fa-trophy"></i> Patents</h4>
@@ -210,7 +267,7 @@
                                     </header>
                                     <div>
                                         <ol>
-                                            <li>[10862859] High available DHCP service by running DHCP servers on a BlockChain network</li>
+                                            <li>[10862859] DHCP-HA service on a BlockChain</li>
                                         </ol>
                                     </div>
                                 </div>
@@ -226,7 +283,7 @@
                                     </header>
                                     <div>
                                         <ul>
-                                            <li>[20200195431] Multiple-site Virtual Private Network secured by IPsec, using Blockchain application for key exchange to optimize number of IPsec rules</li>
+                                            <li>[20200195431] Multiple-site VPN secured by IPsec, using Blockchain</li>
                                             <li>[202141004517] Common IP based network communication between VM and Host</li>
                                             <li>System and method of optimizing VM disk data transfer time for cold migration by preloading page-cache</li>
                                         </ul>
@@ -299,6 +356,8 @@
                                         <ul>
                                             <li>Thoroughly analysed the performance impact of exposing L3-cache information via Qemu</li>
                                             <li>Analysed the IPI (InterProcessor Interrupt) and corresponding VM_EXIT overhead of exposing L3-cache</li>
+                                            <li>Used perf and perf-kvm tool to analyse the impact on Linux scheduler due to Linux schedule domain changes</li>
+                                            <li>Used performance benchmark suites like schbench, sysbench, fio and NAS-PB</li>
                                             <li>Found out a loss of ~8% performance on scheduler intensive tasks</li>
                                         </ul>
                                     </div>
@@ -318,11 +377,10 @@
                                     </header>
                                     <div>
                                         <ul>
-                                            <li>Evaluated AMD EPYC and ARM64 processors and NVIDIA GPUs. Introduced AMD EPYC and NVIDIA ampere hardware into the fleet</li>
+                                            <li>Evaluated AMD EPYC CPUs</li>
                                             <li>Defining new VM types for customer needs - compute, storage, graphics-SIME, etc.,</li>
-                                            <li>Customizing Debian for different <br/>Baremetals - Volume management, RAID configuration, Network configuration, etc., based on their capacity serving</li>
-                                            <li>Debian OS release cycle</li>
-                                            <li>VMC (Virtual Machine Controller) development. It runs on every Baremetal and manages the VMs' creation-start-stop-destroy cycle based on requests from central orchestrator</li>
+                                            <li>Customizing Debian for different <br/>Baremetals - Volume management, RAID configuration, Network configuration, etc.,</li>
+                                            <li>VMC (Virtual Machine Controller) development.</li>
                                             <li>Custom Image Builder development. <br/>Customer can build custom images on top of the image provided by us and use it on their VMs. Similar to Google custom images.</li>
                                         </ul>
                                     </div>
