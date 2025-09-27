@@ -354,7 +354,6 @@ ul.no-margin {
 .details .location {
     color: #a9389b;
     float: right;
-    margin-right: 0.2in;
 }
 
 .details div {
@@ -397,6 +396,10 @@ footer {
     position: absolute;
     right: 0;
     font-size: 8pt;
+}
+
+a {
+    color: darkorchid;
 }
 
 li a {
