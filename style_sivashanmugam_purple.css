@@ -176,6 +176,10 @@ h5 {
     margin-top: 0.3in;
 }
 
+/* #patent-container h4 {
+    margin-top: 0.2in;
+} */
+
 .container h5 {
     font-size: var(--container-font-h5);
 }
@@ -233,6 +237,10 @@ ul.no-margin {
     font-size: 7pt;
     text-align: right;
     line-height: 1;
+}
+
+#experience-container .date {
+    font-family: 'Consolas', monospace;
 }
 
 .date span {
@@ -293,6 +301,20 @@ ul.no-margin {
     /* not sure why but this is needed for better alignment */
 }
 
+#experience-container .details {
+    margin-bottom: 0;
+}
+
+#experience-container .details header .place {
+    margin-bottom: .5em !important;
+    display: block !important;
+    float: none !important;
+}
+
+#patent-container .details {
+    margin-bottom: 0;
+}
+
 .details header {
     color: #000;
 }
@@ -301,6 +323,10 @@ ul.no-margin {
     letter-spacing: 1.5pt;
     font-weight: 600;
     margin-bottom: 0.1in;
+}
+
+#patent-container .details h3 {
+    margin-bottom: 0;
 }
 
 .main-block:not(.concise) .details div {
@@ -328,6 +354,7 @@ ul.no-margin {
 .details .location {
     color: #a9389b;
     float: right;
+    margin-right: 0.2in;
 }
 
 .details div {
@@ -374,4 +401,8 @@ footer {
 
 li a {
     float: right;
+}
+
+.detailed-experience li a {
+    float: none;
 }
