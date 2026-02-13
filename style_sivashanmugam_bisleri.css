@@ -189,7 +189,7 @@ h5 {
 }
 
 .container button {
-    background: #c653b8;
+    background: #00B3A1;
     border: 0px;
     padding: 4pt 6pt;
     margin: 0pt 2pt;
@@ -348,15 +348,15 @@ ul.no-margin {
 }
 
 .details .place {
-    color: #a9389b;
+    color: #00B3A1;
     float: left;
 }
 
 .details .grade {
-    color: #a9389b;
+    color: #00B3A1;
 }
 .details .location {
-    color: #a9389b;
+    color: #00B3A1;
     float: right;
 }
 
@@ -403,7 +403,7 @@ footer {
 }
 
 a {
-    color: darkorchid;
+    color: #00B3A1;
 }
 
 li a {
